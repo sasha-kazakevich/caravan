@@ -1,0 +1,37 @@
+.feedback
+  text-align center
+  overflow hidden
+  .feedback-text
+    font-family 'HelveticaNeueCyr-Light'
+    font-size 14px
+  .feedback-name
+    font-size 24px
+    color #ffff00
+  .Wallop-buttonPrevious,.Wallop-buttonNext
+    position absolute
+    width 58px
+    height 78px
+    border none
+    outline none
+    background url('../images/feedback/button.png')
+    top: 140px
+    z-index 999
+    &:hover
+      background url('../images/feedback/button-hover.png')
+  .Wallop-buttonPrevious
+    left 10%
+  .Wallop-buttonNext
+    right 10%
+    background-position 58px 0px
+    &:hover
+      background-position 58px 0px
+  +below(mobile-breakpoint)
+    .Wallop-item
+      img
+        width 60%
+    .Wallop-buttonPrevious,.Wallop-buttonNext
+      top 50px
+    .Wallop-buttonPrevious
+      left 1%
+    .Wallop-buttonNext
+      right 1%

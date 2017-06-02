@@ -1,0 +1,30 @@
+section.main
+  h1 Транспортные услуги в Молодечно,<br/> Вилейке и Сморгони
+  div.main-info
+    - var info = [{'img':'images/main/protect.png','title':'Сохранность','text':'Гарантируем сохранность вашего имущества'},{'img':'images/main/car.png','title':'Скорость','text':'Приступаем к работе сразу же после звонка или заявки'},{'img':'images/main/feedback.png','title':'Сотрудничество','text':'Сотрудничаем с физическими и юридическими лицами'}]
+      each block in info
+        div.info-block
+          img(src='#{block.img}')
+          p.title #{block.title}
+          p.text #{block.text}
+  div.main-working.bounceinleft
+    h1 Как мы работаем?
+    - var works = [{'img':'images/main/network.png','title':'Свяжитесь с нами','text':'Связываетесь с нами по заявке на сайте, либо по телефону.'},{'img':'images/main/work.png','title':'Выполнение работ','text':'Выполняем договоренную работу в срок.'},{'img':'images/main/payment.png','title':'Оплата','text':'Оплачиваете наши услуги. Безналичный и наличный расчет.'}]
+      each block in works
+        div.working-block
+          img(src='#{block.img}')
+          p.title.working-text #{block.title}
+          p.text.working-text #{block.text}
+  div.main-form.bounceinleft
+    h1 Оставьте заявку на звонок
+    img.form-thank(src="images/main/thank.png")
+    form.contacts-form#contacts-form
+      input(form="contacts-form" id="name" name="name" type="text" title="Ваше имя" placeholder="Ваше имя" required pattern="[a-zA-Zа-яА-Я ]+")
+      input(form="contacts-form" id="number" name="number" type="text" title="Ваш телефон в формате +375 ** *** ** **" placeholder="Ваш телефон" required pattern="(\\+375 (25|29|33|44)( [0-9]{3}( [0-9]{2}){2}))")
+      input(form="contacts-form" id="email" name="email" type="text" title="Ваш email в формате ***@**.**" placeholder="Ваш email" pattern="^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$")
+      button Отправить
+  div.button-up#button-up
+  p.ynp УНП 691894094 КУЗИН Д. А. <br/> 2016 год
+  a.aftograf(href="http://risestudio.by")
+   img.img-af(src="images/aftograf.png" alt="img")
+   p.p-af Дизайн завод Rise

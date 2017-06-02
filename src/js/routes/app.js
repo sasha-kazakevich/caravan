@@ -1,0 +1,10 @@
+page('/', route.main,main);
+page.exit('/',exitMain);
+page('/rent',route.rent,rent);
+page('/service', route.service,service);
+page('/contacts', route.contacts,contacts);
+page.exit('/contacts',exitContacts);
+page('/about', route.about,about);
+page('/feedback', route.feedback,feedback);
+page.exit('/feedback',exitFeedBack);
+page();

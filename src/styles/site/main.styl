@@ -1,0 +1,182 @@
+.main
+  text-align center
+  h1
+    margin-bottom 35px
+    font-size 36px
+  +below(mobile-breakpoint)
+    h1
+      font-size 24px
+      margin 7px 0
+.main-info
+  display flex
+  justify-content space-around
+  +below(mobile-breakpoint)
+    flex-direction column
+    align-items center
+    .info-block
+      margin 5px
+      .title
+        margin 0
+.title
+  font-size 30px
+  color #ffff00
+  margin-top 45px
+  margin-bottom: 0
+  +below(mobile-breakpoint)
+    font-size 18px
+.text
+  font-family 'HelveticaNeueCyr-Light'
+  font-size 18px
+  margin: 7px 0
+  padding 0 29px
+  +below(mobile-breakpoint)
+    font-size 14px
+.main-working
+  width 650px
+  margin 45px auto
+  +below(mobile-breakpoint)
+    width 80%
+.working-block
+  text-align left
+  img
+    padding-top 10px
+    float left
+  .working-text
+    padding-left 110px
+  +below(mobile-breakpoint)
+    .working-text
+      padding-left 60px
+.main-form
+  width 510px
+  margin 40px auto 0
+  position relative
+  +below(mobile-breakpoint)
+    width 80%
+    margin 10px auto 0
+    .contacts-form
+      input
+        width 80%
+.form-thank
+  position absolute
+  display none
+  left 20%
+  +below(610px)
+    left 15%
+  +below(510px)
+    left 7%
+  +below(410px)
+    left -3%
+  +below(346px)
+    left -14%
+.contacts-form
+  color #000
+  font-family 'HelveticaNeueCyr-Light'
+  input,button
+    font-size 16px
+    border-radius 15px
+    border none
+    box-shadow 0px 5px 0px 0px rgba(0, 0, 0, 0.15)
+    outline none
+  input
+    width 90%
+    margin-bottom 40px
+    padding 16px 0px 16px 45px
+  input::-webkit-input-placeholder
+    text-indent 0
+    color #000
+    transition text-indent .3s ease
+  input::-moz-placeholder
+    text-indent 0
+    color #000
+    transition text-indent .3s ease
+  input:-moz-placeholder
+    text-indent 0
+    color #000
+    transition text-indent .3s ease
+  input:-ms-input-placeholder
+    text-indent 0
+    color #000
+    transition text-indent .3s ease
+  input:focus::-webkit-input-placeholder
+    text-indent 500px
+  input:focus::-moz-placeholder
+    text-indent 500px
+  input:focus:-moz-placeholder
+    text-indent 500px
+  input:focus:-ms-input-placeholder
+    text-indent 500px
+  button
+    width 100%
+    padding 9px 0
+    margin-bottom 20px
+    font-size 30px
+    background-color #ffff00
+    transition all .3s ease-in-out
+    &:hover
+      background-color #fff
+.button-up
+  width 50px
+  height 50px
+  border-radius 50%
+  margin 40px auto 38px
+  background url('../images/main/up.png') no-repeat center center
+  background-color #fff
+  box-shadow 0px 5px 0px 0px rgba(0, 0, 0, 0.15)
+  transition all .2s ease-in-out
+  &:hover
+    background-color #ffff00
+    cursor pointer
+.ynp
+  font-family 'HelveticaNeueCyr-Light'
+  font-size 12px
+  text-align center
+  +below(mobile-breakpoint)
+   font-size 11px
+.aftograf
+  display block
+  width 160px
+  height 30px
+  margin 25px auto
+  position relative
+  overflow hidden
+  float right
+  .img-af
+    float right
+    position relative
+    right -5px
+    z-index 10
+  .p-af
+    position absolute
+    font-family 'HelveticaNeueCyr-Light'
+    font-size 14px
+    z-index 8
+    color #fff
+    opacity 0
+    margin 0
+    top 5px
+    right -153px
+    transition all .3s ease-in-out
+    text-indent 0px
+  &:hover
+    .p-af
+      right 40px
+      opacity 1
+  // float right
+  // right 10px
+  // overflow hidden
+  // background url('../images/aftograf2.png') no-repeat
+  // &:after
+  //   content 'Дизайн завод Rise'
+  //   color #fff
+  //   width 200px
+  //   height 50px
+  //   // border 1px solid yellow
+  //   position absolute
+  //   left 10px
+  //   top 10px
+  //   transition all .3s ease-in-out
+  // &:hover
+  //   &:after
+  //     display block
+  //     left -200px
+  //     opacity 1

@@ -1,0 +1,127 @@
+/*-header main-menu-*/
+- first-breakpoint = 1000px
+- mobile-breakpoint = 724px
+- table-breakpoint = 653px
+
+
+body
+  background url('../images/background.png')
+  background-size cover
+  font-family 'amganahitsemiserif'
+  color #fff
+  box-sizing border-box
+.wrapper
+  padding 45px 150px 0px
+  +below(first-breakpoint)
+    padding 45px 10px 0px
+  +below(mobile-breakpoint)
+    padding 5px
+header
+  display flex
+  justify-content space-between
+  font-family 'HelveticaNeueCyr-Light'
+  +below(mobile-breakpoint)
+    flex-direction column
+    align-items center
+
+.header-logo
+  img
+    float left
+  p
+    margin 0
+    padding-left 100px
+    font-family 'HelveticaNeueCyr-Medium'
+    font-size 14px
+    line-height 1
+    padding-bottom 5px
+  p.header-logo-name
+    font-family 'amganahitsemiserif'
+    font-size 36px
+    padding-left 98px
+  +below(mobile-breakpoint)
+    margin-bottom 15px
+.header-numbers
+  .images
+    float left
+    width 23px
+    height 23px
+    clear both
+  .images-mts
+    background url('../images/header/sprite.png') -5px 0px
+  .images-vel
+    background url('../images/header/sprite.png') 37px 0px
+    margin-top 10px
+  p
+    font-family 'HelveticaNeueCyr-Light'
+    font-size 16px
+    margin 0
+    padding 4px 0 4px 50px
+    &:last-child
+      margin-top 10px
+  +below(mobile-breakpoint)
+    margin-bottom 15px
+.header-mail
+  .images-vk
+    width 35px
+    height 35px
+    background url('../images/header/sprite.png') 0px 37px
+    float left
+  p
+    margin 0
+    padding-left 50px
+    font-family 'HelveticaNeueCyr-Bold'
+    font-size 18px
+    span
+      font-family 'HelveticaNeueCyr-Light'
+nav
+  .button-menu
+    width 35px
+    height 35px
+    margin 10px auto
+    display none
+  .main-menu
+    list-style-type none
+    margin 60px auto
+    padding 0
+    width 666px
+    li
+      display inline-block
+      margin 0 10px
+      a
+        font-family 'HelveticaNeueCyr-Light'
+        font-size 16px
+        color #fff
+        text-decoration none
+        padding 14px 25px
+        transition all .3s ease-in-out
+        &:hover
+          background-color #ffff00
+          color #000
+          cursor pointer
+  +below(mobile-breakpoint)
+    .button-menu
+      display block
+      background url('../images/menu-icon.png')
+      background-size cover
+    .main-menu
+      width 98%
+      margin 0 auto
+      display none
+      li
+        display block
+        text-align center
+        margin 3px 0
+        a
+          display block
+    .main-menu.open
+      display block
+    .button-menu.open
+      background url('../images/menu-open.png')
+      background-size cover
+.active
+  background-color #ffff00
+  color #000 !important
+.hidden
+  opacity 0
+.visible
+  opacity 1

@@ -1,0 +1,17 @@
+section.services
+  div.services-group-one.bounceinleft
+    - var group = [{'img': 'images/services/groupone/1.png','text':'Грузовые перевозки'},{'img': 'images/services/groupone/2.png','text':'Прокат легковых прицепов, площадка-автовоз (лафет), частичной погрузки'},{'img': 'images/services/groupone/3.png','text':'Помощь в переезде, услуги грузчиков'},{'img': 'images/services/groupone/4.png','text':'Пассажирские перевозки (до 18 мест)'},{'img': 'images/services/groupone/5.png','text':' Эвакуатор для вашего авто, любые направления'},{'img': 'images/services/groupone/6.png','text':'Свадьбы, встречи с роддомов, деловые поездки, авто любого класса'}]
+      each service in group
+        figure
+          img(src="#{service.img}")
+          figcaption #{service.text}
+  div.services-group-two.bounceinleft
+    - var group = [{'img': 'images/services/grouptwo/1.png','title':'Работа с таможней и логистическими центрами','text':'Заберём груз с таможенных складов и терминалов, а также заберём или доставим грузы. Работаем с логистическими центрами. Авто в вашем распоряжении столько, сколько нужно Вам.'},{'img': 'images/services/grouptwo/2.png','title':'Грузоперевозка для производственного предприятия','text':'Доставим сырьё, материалы, полуфабрикаты, станки или готовую продукцию на Ваше предприятие. Зафиксируем груз ремнями. Подача авто точно в срок.'},{'img': 'images/services/grouptwo/3.png','title':'Перевозка для магазинов и торговых сетей','text':'Развезём товар со склада до розничных точек по оптимальному маршруту. При необходимости предоставим грузчиков. Гарантируем сохранность товара. Автомобиль и водитель в вашем распоряжении столько, сколько потребуется.'},{'img': 'images/services/grouptwo/4.png','title':'Офисный переезд под ключ','text':'Берём на себя все проблемы, связанные с офисными переездами, а именно: упаковка, погрузка, доставка, разгрузка вещей, офисной мебели и техники. Обеспечим конфиденциальность перевозимых документов.'},{'img': 'images/services/grouptwo/5.png','title':'Квартирный переезд','text':'Перевезём все необходимые Вам вещи в любой уголок СНГ. При необходимости предоставим порядочных грузчиков, которые быстро спустят и поднимут вещи, а также безопасно зафиксируют груз.'},{'img': 'images/services/grouptwo/6.png','title':'Обслуживание интернет-магазинов','text':'Заберём товар со склада и доставим потребителю точно в срок.'}]
+      each service in group
+        figure
+          img(src="#{service.img}")
+          figcaption.title.group-two-text #{service.title}
+          figcaption.text.group-two-text #{service.text}
+  a.aftograf(href="http://risestudio.by")
+    img.img-af(src="images/aftograf.png" alt="img")
+    p.p-af Дизайн завод Rise

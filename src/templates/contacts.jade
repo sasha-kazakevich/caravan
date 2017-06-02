@@ -1,0 +1,15 @@
+section.contacts
+  p.contact-info +375 (29) 656 23 34
+  p.contact-info +375 (33) 316 23 34
+  p.contact-info transcaravan@yandex.ru
+  div.main-form.post
+    h1 Оставьте заявку на звонок
+    img.form-thank(src="images/main/thank.png")
+    form.contacts-form#contacts-form
+      input(form="contacts-form" id="name" name="name" type="text" title="Ваше имя" placeholder="Ваше имя" required pattern="[a-zA-Zа-яА-Я ]+")
+      input(form="contacts-form" id="number" name="number" type="text" title="Ваш телефон в формате +375 ** *** ** **" placeholder="Ваш телефон" required pattern="(\\+375 (25|29|33|44)( [0-9]{3}( [0-9]{2}){2}))")
+      input(form="contacts-form" id="email" name="email" type="text" title="Ваш email в формате ***@**.**" placeholder="Ваш email" pattern="^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$")
+      button Отправить
+  a.aftograf(href="http://risestudio.by")
+    img.img-af(src="images/aftograf.png" alt="img")
+    p.p-af Дизайн завод Rise
